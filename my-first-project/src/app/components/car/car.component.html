@@ -1,1 +1,25 @@
-<p>car works!</p>{{model}}
+<div class="container">
+  <br>
+  <h4><mark>Автомобиль</mark>{{name}}
+  <small>{{model}}</small></h4>
+    <div class="alert alert-success">
+      Характеристики автомобиля:
+<ul>
+  <li>Скорость:<strong>((speed))<strong>км</li>
+  <li>Цвет автомобиля:<strong>((colors.car))</strong></li>
+  <li>Цвет салона:<strong>((colors.salon))</strong></li>
+  <li>Цвет колес:<strong>((colors.wheels))</strong></li>
+</ul>-
+</div>
+<h5>Возможности автомобиля</h5>
+<div class="alert alert-warning">
+  <ul>
+    <li ngFor="let opt of opions;let i=index">{{i+1}}-((opt))</li>
+
+  </ul>
+</div>
+<h5>Выберите автомобиль</h5>
+<button class="btn-danger" (clikc)="carSelect('bmw')">BMV</button>
+<button class="btn-success" (clikc)="carSelect('Audi')">Audi</button>
+<button class="btn-info" (clikc)="carSelect('Mercedes')">Mercedes</button>
+</div>

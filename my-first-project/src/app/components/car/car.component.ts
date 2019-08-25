@@ -11,6 +11,7 @@ speed:number;
 model:string;
 colors:Colors;
 options:string[];
+test:any;
 
   constructor() { }
 
@@ -19,13 +20,48 @@ options:string[];
     this.model=235;
     this.model='RS8';
     this.colors={
-      car:'White',
-      salon:'Black',
-      wheels:'Silver'
+      car:'Белый',
+      salon:'Черный',
+      wheels:'Серебристый'
     };
-    this.options['ABS']
+    this.options=["ABS", "Автопилот"," Авто паркинг"];
+    this.test=true;
+    carSelect(carName){
+      if(carName=='bmw'){
+      this.name='BMW';
+      this.model=280;
+      this.model='RS';
+      this.colors={
+        car:'Синий',
+        salon:'Черный',
+        wheels:'Серебристый'
+      };
+      this.options=["ABS", "Автопилот"," Авто паркинг"];
+    }
+    else if(carName=='Audi'){
+      this.name='Audi';
+      this.model=235;
+      this.model='RS8';
+      this.colors={
+        car:'Белый',
+        salon:'Черный',
+        wheels:'Серебристый'
+      };
+      this.options=["ABS", "Автопилот"," Авто паркинг"];
+    }
+      else {
+        this.name='Mercedes';
+        this.model=235;
+        this.model='RS8';
+        this.colors={
+          car:'Белый',
+          salon:'Черный',
+          wheels:'Серебристый'
+};
+this.options=["ABS", "Автопилот"," Авто паркинг"];
 }
 }
+
 
 
 
@@ -33,4 +69,7 @@ interface Colors{
   car:string,
   salon:string,
   wheels:string;
+}
+
+}
 }
