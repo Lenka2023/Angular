@@ -12,6 +12,7 @@ model:string;
 colors:Colors;
 options:string[];
 test:any;
+isEdit:boolean=false;
 
   constructor() { }
 
@@ -29,12 +30,15 @@ test:any;
   }
   deleteOpt(){
     for(let i = 0; i < this.options.length;i++){
-      if(this.options[i]==option){
+      if(this.options[i] == option){
       this.options.splice(i,1);
       break;
       }
     }
 
+  }
+  showEdit(){
+    this.isEdit=!this.isEdit;
   }
   AddOpt(option){
   this.options.unshift(option);
