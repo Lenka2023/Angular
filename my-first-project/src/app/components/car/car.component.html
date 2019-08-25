@@ -17,12 +17,12 @@
     <lable for="option">Добавление новой возможности<lable>
       <input type="text" id="option" placeholder="Введите что-то" class="form-control" #option>
       <br>
-      <button type="button" class="btn btn-outline-success">Добавить</button>
+      <button type="submit" class="btn btn-outline-success">Добавить</button>
    </div>
 </form>
 <div class="alert alert-warning">
   <ul>
-    <li ngFor="let opt of opions;let i=index">{{i+1}}-((opt))</li>
+    <li ngFor="let opt of opions;let i=index">{{i+1}}-((opt))<button class="btn btn-warning btn-sm"(click)=deleteOpt(option)></button></li>
 
   </ul>
 </div>
