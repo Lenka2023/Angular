@@ -26,6 +26,11 @@ test:any;
     };
     this.options=["ABS", "Автопилот"," Авто паркинг"];
     this.test=true;
+  }
+  AddOpt(option){
+  this.options.unshift(option);
+  return false
+  }
     carSelect(carName){
       if(carName=='bmw'){
       this.name='BMW';
@@ -60,7 +65,7 @@ test:any;
 };
 this.options=["ABS", "Автопилот"," Авто паркинг"];
 }
-}
+
 
 
 
@@ -70,6 +75,5 @@ interface Colors{
   salon:string,
   wheels:string;
 }
-
 }
 }
