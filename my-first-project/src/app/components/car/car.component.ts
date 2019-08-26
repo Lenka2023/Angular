@@ -18,7 +18,7 @@ isEdit:boolean=false;
 
   ngOnInit() {
     this.name='Audi';
-    this.model=235;
+    this.speed=235;
     this.model='RS8';
     this.colors={
       car:'Белый',
@@ -47,7 +47,7 @@ isEdit:boolean=false;
     carSelect(carName){
       if(carName=='bmw'){
       this.name='BMW';
-      this.model=280;
+      this.speed=280;
       this.model='RS';
       this.colors={
         car:'Синий',
@@ -58,7 +58,7 @@ isEdit:boolean=false;
     }
     else if(carName=='Audi'){
       this.name='Audi';
-      this.model=235;
+      this.speed=235;
       this.model='RS8';
       this.colors={
         car:'Белый',
@@ -69,7 +69,7 @@ isEdit:boolean=false;
     }
       else {
         this.name='Mercedes';
-        this.model=235;
+        this.speed=235;
         this.model='RS8';
         this.colors={
           car:'Белый',
