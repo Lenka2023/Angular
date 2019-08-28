@@ -6,9 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarComponent } from './components/car/car.component';
 import { KontaktiComponent } from './components/kontakti/kontakti.component';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 const appRoutes: Routes=[
-  {path:'', component:CarComponent}
-  {path:'/about', component:KontaktiComponent}
+  {path:'', component:CarComponent},
+  {path:'about', component:KontaktiComponent}
 
 ]
 @NgModule({
@@ -17,13 +18,17 @@ const appRoutes: Routes=[
     CarComponent,
     KontaktiComponent
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
+
   ],
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

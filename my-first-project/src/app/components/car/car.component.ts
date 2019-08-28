@@ -28,7 +28,7 @@ isEdit:boolean=false;
     this.options=["ABS", "Автопилот"," Авто паркинг"];
     this.test=true;
   }
-  deleteOpt(){
+  deleteOpt(option){
     for(let i = 0; i < this.options.length;i++){
       if(this.options[i] == option){
       this.options.splice(i,1);
@@ -78,8 +78,8 @@ isEdit:boolean=false;
 };
 this.options=["ABS", "Автопилот"," Авто паркинг"];
 }
-
-
+}
+}
 
 
 
@@ -87,6 +87,4 @@ interface Colors{
   car:string,
   salon:string,
   wheels:string;
-}
-}
 }
