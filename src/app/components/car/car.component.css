@@ -1,0 +1,11 @@
+button{
+  margin-right: 10px;
+}
+btn-sm{
+  font-size: 0.8 em;
+  line-height: 8 px;
+  padding:5px;
+}
+container{
+  margin-bottom: 50px;
+}
