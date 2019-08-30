@@ -31,7 +31,7 @@
    </div>
 </form>
 <h5>Возможности автомобиля</h5>
-<form (submit)="AddOpt(option.value)">
+<form (submit)="addOpt(option.value)">
   <div class="form-group">
     <lable for="option">Добавление новой возможности</lable>
       <input type="text" id="option" placeholder="Введите что-то" class="form-control" #option />
@@ -41,8 +41,8 @@
 </form>
 <div class="alert alert-warning">
   <ul>
-    <li *ngFor="let opt of opions;let i=index">{{i+1}}-((opt))
-      <button class="btn btn-warning btn-sm"(click)="deleteOpt(option)"></button></li>
+  <li *ngFor="let opt of options">  {{opt}}
+      <button class="btn btn-warning btn-sm"(click)="deleteOpt(opt)">x</button></li>
 
   </ul>
 </div>

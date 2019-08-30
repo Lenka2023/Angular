@@ -28,6 +28,10 @@ isEdit:boolean=false;
     this.options=["ABS", "Автопилот"," Авто паркинг"];
     this.test=true;
   }
+  addOpt(option){
+  this.options.unshift(option);
+  return false;
+  }
   deleteOpt(option){
     for(let i = 0; i < this.options.length;i++){
       if(this.options[i] == option){
@@ -40,10 +44,7 @@ isEdit:boolean=false;
   showEdit(){
     this.isEdit=!this.isEdit;
   }
-  AddOpt(option){
-  this.options.unshift(option);
-  return false
-  }
+
     carSelect(carName){
       if(carName=='bmw'){
       this.name='BMW';
